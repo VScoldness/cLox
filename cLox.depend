@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1658097317 source:c:\users\89721\desktop\clox\clox\main.c
+	"common.h"
+	"chunk.h"
+	"debug.h"
+
+1658097116 c:\users\89721\desktop\clox\clox\common.h
+	<stdbool.h>
+	<stddef.h>
+	<stdint.h>
+
+1658080298 c:\users\89721\desktop\clox\clox\chunk.h
+	"common.h"
+
+1658076205 c:\users\89721\desktop\clox\clox\debug.h
+	"chunk.h"
+
+1658097198 source:c:\users\89721\desktop\clox\clox\debug.c
+	<stdio.h>
+	"debug.h"
+
+1658075743 source:c:\users\89721\desktop\clox\clox\chunk.c
+	<stdlib.h>
+	"chunk.h"
+	"memory.h"
+
+1658097266 c:\users\89721\desktop\clox\clox\memory.h
+
+1658097302 source:c:\users\89721\desktop\clox\clox\memory.c
+	<stdlib.h>
+	"memory.h"
+
