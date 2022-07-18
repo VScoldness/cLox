@@ -30,3 +30,44 @@
 	<stdlib.h>
 	"memory.h"
 
+1658097302 source:d:\github\cs_projects\clox\memory.c
+	<stdlib.h>
+	"memory.h"
+
+1658097266 d:\github\cs_projects\clox\memory.h
+
+1658161632 source:d:\github\cs_projects\clox\chunk.c
+	<stdlib.h>
+	"chunk.h"
+	"memory.h"
+
+1658162375 d:\github\cs_projects\clox\chunk.h
+	"common.h"
+	"value.h"
+
+1658097116 d:\github\cs_projects\clox\common.h
+	<stdbool.h>
+	<stddef.h>
+	<stdint.h>
+
+1658160595 d:\github\cs_projects\clox\value.h
+	"common.h"
+
+1658162469 source:d:\github\cs_projects\clox\main.c
+	"common.h"
+	"chunk.h"
+	"debug.h"
+
+1658076205 d:\github\cs_projects\clox\debug.h
+	"chunk.h"
+
+1658162554 source:d:\github\cs_projects\clox\value.c
+	<stdio.h>
+	"memory.h"
+	"value.h"
+
+1658162564 source:d:\github\cs_projects\clox\debug.c
+	<stdio.h>
+	"debug.h"
+	"value.h"
+
