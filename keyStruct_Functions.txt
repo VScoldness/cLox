@@ -1,0 +1,49 @@
+typedef  enum {
+	OP_CONSTANT,
+	OP_RETURN,
+}  OpCode;
+
+
+typedef  struct {
+	int count;
+	int capacity;
+	uint8_t* code;
+	int* lines;
+	ValueArray constants;
+} Chunk;
+
+
+initChunk(Chunk* chunk);
+writeChunk(Chunk* chunk, uint8_t byte);
+freeChunk(Chunk* chunk);
+addConstant(Chunk* chunk, Value value);
+
+
+typedef double Value;
+
+
+typedef struct {
+	int capacity;
+	int count;
+	Value* values;
+} ValueArray;
+
+
+initValueArray(ValueArray* array);
+writeValueArray(ValueArray* array, Value value);
+freeValueArray(ValueArray* array);
+
+
+typedef  struct {
+	Chunk* chunk;
+	uint_8t* ip;
+	Value stack[STACK_MAX];
+	Value* stackTop;
+} VM;
+
+
+initVM();
+freeVM();
+interpret(Chunk* chunk);
+
+
