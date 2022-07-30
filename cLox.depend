@@ -45,7 +45,7 @@
 	"common.h"
 	"value.h"
 
-1658702754 d:\github\cs_projects\clox\common.h
+1659128404 d:\github\cs_projects\clox\common.h
 	<stdbool.h>
 	<stddef.h>
 	<stdint.h>
@@ -53,13 +53,16 @@
 1658160595 d:\github\cs_projects\clox\value.h
 	"common.h"
 
-1658705787 source:d:\github\cs_projects\clox\main.c
+1658762577 source:d:\github\cs_projects\clox\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
 	"common.h"
 	"chunk.h"
 	"debug.h"
 	"vm.h"
 
-1658076205 d:\github\cs_projects\clox\debug.h
+1659121326 d:\github\cs_projects\clox\debug.h
 	"chunk.h"
 
 1658162554 source:d:\github\cs_projects\clox\value.c
@@ -67,18 +70,38 @@
 	"memory.h"
 	"value.h"
 
-1658705647 source:d:\github\cs_projects\clox\debug.c
+1658717646 source:d:\github\cs_projects\clox\debug.c
 	<stdio.h>
 	"debug.h"
 	"value.h"
 
-1658704697 d:\github\cs_projects\clox\vm.h
+1658762716 d:\github\cs_projects\clox\vm.h
 	"chunk.h"
 	"value.h"
 
-1658706488 source:d:\github\cs_projects\clox\vm.c
+1659121326 source:d:\github\cs_projects\clox\vm.c
 	<stdio.h>
 	"common.h"
 	"debug.h"
 	"vm.h"
+	"compiler.h"
+
+1659127658 source:d:\github\cs_projects\clox\scanner.c
+	<stdio.h>
+	<string.h>
+	"common.h"
+	"scanner.h"
+
+1658802088 d:\github\cs_projects\clox\scanner.h
+
+1659128343 d:\github\cs_projects\clox\compiler.h
+	"vm.h"
+
+1659128565 source:d:\github\cs_projects\clox\compiler.c
+	<stdio.h>
+	<stdlib.h>
+	"common.h"
+	"compiler.h"
+	"scanner.h"
+	"debug.h"
 

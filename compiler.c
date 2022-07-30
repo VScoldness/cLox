@@ -5,6 +5,9 @@
 #include "compiler.h"
 #include "scanner.h"
 
+#ifdef DEBUG_PRINT_CODE
+#include "debug.h"
+#endif // DEBUG_PRINT_CODE
 
 typedef struct {
     Token current;
@@ -83,7 +86,7 @@ static void advance() {
 static void consume(TokenType type, const char* message) {
     if (parser.current.type == type) {
         advance();
-        return
+        return;
     }
 
     errorAtCurrent(message);
@@ -118,6 +121,11 @@ static void emitConstant(Value value) {
 
 static void endCompiler() {
     emitReturn();
+#ifdef DEBUG_PRINT_CODE
+    if (!parser.hadError) {
+        disassembleChunk(currentChunk(), "code");
+    }
+#endif // DEBUG_PRINT_CODE
 }
 
 static void number() {
@@ -155,6 +163,11 @@ static void unary() {
         default:
             return;
     }
+}
+
+static void grouping() {
+    expression();
+    consume(TOKEN_RIGHT_PAREN, "Expected ')' after expression.");
 }
 
 ParseRule rules[] = {
@@ -205,7 +218,7 @@ static void parsePrecedence(Precedence precedence) {
     ParseFn prefixRule = getRule(parser.previous.type)->prefix;
     if (prefixRule == NULL) {
         error("Expect expression.");
-        return
+        return;
     }
 
     prefixRule();
@@ -225,18 +238,13 @@ static void expression() {
     parsePrecedence(PREC_ASSIGNMENT);
 }
 
-static void grouping() {
-    expression();
-    consume(TOKEN_RIGHT_PAREN, "Expected ')' after expression.");
-}
 
-
-void compile(const char* source, Chunk* chunk) {
+bool compile(const char* source, Chunk* chunk) {
     initScanner(source);
     /*
     int line = -1;
     for (;;) {
-        Token token = ScanToken();
+        Token token = scanToken();
         if (token.line != line) {
             printf("%4d ", token.line);
             line = token.line;
