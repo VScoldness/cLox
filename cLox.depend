@@ -30,9 +30,10 @@
 	<stdlib.h>
 	"memory.h"
 
-1658097302 source:d:\github\cs_projects\clox\memory.c
+1659307212 source:d:\github\cs_projects\clox\memory.c
 	<stdlib.h>
 	"memory.h"
+	"vm.h"
 
 1659307197 d:\github\cs_projects\clox\memory.h
 	"common.h"
@@ -43,11 +44,11 @@
 	"chunk.h"
 	"memory.h"
 
-1659237044 d:\github\cs_projects\clox\chunk.h
+1663279155 d:\github\cs_projects\clox\chunk.h
 	"common.h"
 	"value.h"
 
-1659128404 d:\github\cs_projects\clox\common.h
+1660494318 d:\github\cs_projects\clox\common.h
 	<stdbool.h>
 	<stddef.h>
 	<stdint.h>
@@ -67,23 +68,24 @@
 1659121326 d:\github\cs_projects\clox\debug.h
 	"chunk.h"
 
-1659290776 source:d:\github\cs_projects\clox\value.c
+1660087702 source:d:\github\cs_projects\clox\value.c
 	<stdio.h>
 	<string.h>
 	"memory.h"
 	"value.h"
 	"object.h"
 
-1659290395 source:d:\github\cs_projects\clox\debug.c
+1663279318 source:d:\github\cs_projects\clox\debug.c
 	<stdio.h>
 	"debug.h"
 	"value.h"
 
-1659306639 d:\github\cs_projects\clox\vm.h
+1660413416 d:\github\cs_projects\clox\vm.h
 	"chunk.h"
 	"value.h"
+	"table.h"
 
-1659306060 source:d:\github\cs_projects\clox\vm.c
+1663279200 source:d:\github\cs_projects\clox\vm.c
 	<stdarg.h>
 	<stdio.h>
 	<string.h>
@@ -100,29 +102,43 @@
 	"common.h"
 	"scanner.h"
 
-1658802088 d:\github\cs_projects\clox\scanner.h
+1663264561 d:\github\cs_projects\clox\scanner.h
 
 1659288198 d:\github\cs_projects\clox\compiler.h
 	"vm.h"
 	"object.h"
 
-1659288103 source:d:\github\cs_projects\clox\compiler.c
+1660512244 source:d:\github\cs_projects\clox\compiler.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 	"common.h"
 	"compiler.h"
 	"scanner.h"
 	"debug.h"
 
-1659306448 d:\github\cs_projects\clox\object.h
+1659974146 d:\github\cs_projects\clox\object.h
 	"common.h"
 	"value.h"
 
-1659305316 source:d:\github\cs_projects\clox\object.c
+1660405702 source:d:\github\cs_projects\clox\object.c
 	<stdio.h>
 	<string.h>
 	"memory.h"
 	"object.h"
 	"value.h"
 	"vm.h"
+	"table.h"
+
+1660405641 d:\github\cs_projects\clox\table.h
+	"common.h"
+	"value.h"
+
+1660087495 source:d:\github\cs_projects\clox\table.c
+	<stdlib.h>
+	<string.h>
+	"memory.h"
+	"object.h"
+	"table.h"
+	"value.h"
 
