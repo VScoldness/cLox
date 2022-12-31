@@ -30,33 +30,33 @@
 	<stdlib.h>
 	"memory.h"
 
-1659307212 source:d:\github\cs_projects\clox\memory.c
+1659303612 source:d:\github\cs_projects\clox\memory.c
 	<stdlib.h>
 	"memory.h"
 	"vm.h"
 
-1659307197 d:\github\cs_projects\clox\memory.h
+1659303597 d:\github\cs_projects\clox\memory.h
 	"common.h"
 	"object.h"
 
-1658181289 source:d:\github\cs_projects\clox\chunk.c
+1658177689 source:d:\github\cs_projects\clox\chunk.c
 	<stdlib.h>
 	"chunk.h"
 	"memory.h"
 
-1663279155 d:\github\cs_projects\clox\chunk.h
+1663275555 d:\github\cs_projects\clox\chunk.h
 	"common.h"
 	"value.h"
 
-1660494318 d:\github\cs_projects\clox\common.h
+1660490718 d:\github\cs_projects\clox\common.h
 	<stdbool.h>
 	<stddef.h>
 	<stdint.h>
 
-1659285834 d:\github\cs_projects\clox\value.h
+1659282234 d:\github\cs_projects\clox\value.h
 	"common.h"
 
-1658762577 source:d:\github\cs_projects\clox\main.c
+1658758977 source:d:\github\cs_projects\clox\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -65,27 +65,27 @@
 	"debug.h"
 	"vm.h"
 
-1659121326 d:\github\cs_projects\clox\debug.h
+1659117726 d:\github\cs_projects\clox\debug.h
 	"chunk.h"
 
-1660087702 source:d:\github\cs_projects\clox\value.c
+1660084102 source:d:\github\cs_projects\clox\value.c
 	<stdio.h>
 	<string.h>
 	"memory.h"
 	"value.h"
 	"object.h"
 
-1663279318 source:d:\github\cs_projects\clox\debug.c
+1663275718 source:d:\github\cs_projects\clox\debug.c
 	<stdio.h>
 	"debug.h"
 	"value.h"
 
-1660413416 d:\github\cs_projects\clox\vm.h
+1660409816 d:\github\cs_projects\clox\vm.h
 	"chunk.h"
 	"value.h"
 	"table.h"
 
-1663279200 source:d:\github\cs_projects\clox\vm.c
+1663275600 source:d:\github\cs_projects\clox\vm.c
 	<stdarg.h>
 	<stdio.h>
 	<string.h>
@@ -96,19 +96,19 @@
 	"object.h"
 	"memory.h"
 
-1659127658 source:d:\github\cs_projects\clox\scanner.c
+1659124058 source:d:\github\cs_projects\clox\scanner.c
 	<stdio.h>
 	<string.h>
 	"common.h"
 	"scanner.h"
 
-1663264561 d:\github\cs_projects\clox\scanner.h
+1663260961 d:\github\cs_projects\clox\scanner.h
 
-1659288198 d:\github\cs_projects\clox\compiler.h
+1659284598 d:\github\cs_projects\clox\compiler.h
 	"vm.h"
 	"object.h"
 
-1660512244 source:d:\github\cs_projects\clox\compiler.c
+1663346278 source:d:\github\cs_projects\clox\compiler.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -117,11 +117,11 @@
 	"scanner.h"
 	"debug.h"
 
-1659974146 d:\github\cs_projects\clox\object.h
+1659970546 d:\github\cs_projects\clox\object.h
 	"common.h"
 	"value.h"
 
-1660405702 source:d:\github\cs_projects\clox\object.c
+1660402102 source:d:\github\cs_projects\clox\object.c
 	<stdio.h>
 	<string.h>
 	"memory.h"
@@ -130,11 +130,11 @@
 	"vm.h"
 	"table.h"
 
-1660405641 d:\github\cs_projects\clox\table.h
+1660402041 d:\github\cs_projects\clox\table.h
 	"common.h"
 	"value.h"
 
-1660087495 source:d:\github\cs_projects\clox\table.c
+1660083895 source:d:\github\cs_projects\clox\table.c
 	<stdlib.h>
 	<string.h>
 	"memory.h"
